@@ -34,6 +34,7 @@ export default function Home({ product }: HomeProps ) {
   )
 }
 
+// getStaticProps (SSG) = local seguro para utilizar chaves secretas
 export const getStaticProps: GetStaticProps = async () => {
   const price = await stripe.prices.retrieve('price_1KwPXWA6QUONcj7TDQ0VWLRJ')
 
